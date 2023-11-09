@@ -21,9 +21,9 @@ export default function Home() {
     // const userGuess = guess;
     if (guess !== "") {
       if (guess === "21") {
-        setAgeGuess(`Yes, my age is ${guess} 👍`);
+        setAgeGuess(`Yes, I am ${guess} years old 👍`);
       } else {
-        setAgeGuess(`My age is not ${guess}`);
+        setAgeGuess(`I'm not ${guess} years old`);
       }
     } else {
       setAgeGuess("Guess my age!");
@@ -70,7 +70,7 @@ export default function Home() {
             style={{
               marginTop: "12px",
             }}
-            placeholder="18"
+            placeholder="Guess here"
             onChange={(e) => handlerAgeGuess(e.target.value)}
           ></input>
         </div>
